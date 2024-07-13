@@ -62,38 +62,7 @@ To set up and run the Energy Demand Forecasting API locally:
    python model.py
    ```
 
-## Deployment
 
-To deploy the application to a platform like Heroku, follow these steps:
-
-1. **Create a `requirements.txt` File**:
-   ```txt
-   flask
-   pandas
-   statsmodels
-   gunicorn
-   ```
-
-2. **Create a `Procfile`**:
-   ```txt
-   web: gunicorn app:app
-   ```
-
-3. **Deploy to Heroku**:
-   ```sh
-   git init
-   git add .
-   git commit -m "Initial commit"
-   heroku create your-app-name
-   git push heroku master
-   ```
-
-4. **Open Your Deployed App**:
-   ```sh
-   heroku open
-   ```
-
-## Usage
 
 To request a forecast, use the following `curl` command:
 
